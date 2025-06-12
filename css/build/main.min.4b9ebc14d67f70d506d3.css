@@ -452,6 +452,12 @@ footer .socials li a img {
   }
 }
 
+body.home section.home .row {
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
 body.expert-page-wrapper *:not(i) {
   font-family: "IBM Plex Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 }

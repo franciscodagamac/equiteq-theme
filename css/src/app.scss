@@ -566,6 +566,18 @@ footer {
 }
 
 
+body.home {
+
+	section.home {
+
+		.row {
+			align-items: center;
+		    justify-content: center;
+		    height: 30vh
+		}
+	}
+}
+
 // expert page CSS
 
 body.expert-page-wrapper {

@@ -134,7 +134,12 @@ $page = get_post($id);
                     endwhile;
                     wp_reset_postdata();
                 else :
-                    echo '<p>No expert posts found.</p>';
+                    ?>
+                    <div class="col-12 mt-5 text-center py-5">
+                        <h4 class="text-muted">No team members found.</h4>
+                        <p>Please check back later or adjust your filters.</p>
+                    </div>
+                    <?php
                 endif;
 
             ?>
