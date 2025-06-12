@@ -9,11 +9,9 @@
                 <div class="pb-3">
                     <img src="<?php echo get_template_directory_uri() ?>/images/svg/Equitec_Logo_ReverseColour_RGB-2.svg" alt="logo">
                 </div>
-                <?php if (is_active_sidebar('custom-footer-text-widget')): ?>
-                    <div id="header-widget-area" class="chw-widget-area widget-area pt-3" role="complementary">
-                        <?php dynamic_sidebar('custom-footer-text-widget');?>
-                    </div>
-                <?php endif;?>
+                <div class="pt-3">
+                    <p><?php bloginfo( 'description' ); ?></p>
+                </div>
             </div>
             <!-- <div class="col-md-4 pt-4 mb-fixed">
                 <a id="cta-consult-expert" class="btn-cta pull-right text-uppercase bold" href="javascript:void(0);" data-toggle="modal" data-target="#expertModal" data-backdrop="static" data-keyboard="false">Consult with our experts</a>

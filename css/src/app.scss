@@ -11,6 +11,8 @@ $verbRegular: "VerbRegular", helvetica, arial, sans-serif;
 $verbMedium: "VerbMedium", helvetica, arial, sans-serif;
 $verbBold: "VerbExtrabold", helvetica, arial, sans-serif;
 
+$IBM: 'IBM Plex Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
+
 $monitor: "(min-width: 1601px)";
 $desktop: "(min-width:1081px)";
 $tablet: "(max-width: 1500px)";
@@ -36,7 +38,7 @@ html {
 }
 
 body {
-	font-family: $verbRegular;
+	font-family: $IBM;
 	color: $dark-blue;
 	letter-spacing: .01rem;
 	font-size:  $font-size-std;
@@ -114,6 +116,11 @@ h5, .h5 {
 
 a {
 	transition: all 0.2s;
+
+	&:hover {
+		color: $green!important;
+		text-decoration: none;
+	}
 }
 
 a.alt-black {
@@ -143,8 +150,18 @@ ul {
 	}
 }
 
+#wpadminbar {
+	display: none;
+}
+
+.container {
+	max-width: 1340px;
+}
+
 header {
+
 	.navbar {
+		background-color: #000116;
 		transition: all 0.3s;
 		
 		&.have-bg {
@@ -160,12 +177,16 @@ header {
 		
 		a {
 			&.nav-link {
-				font-family: $verbRegular;
+				font-family: $IBM;
+				font-weight: bolder;
 				color: $white !important;
 				padding-left: 1.2rem !important;
 				padding-right: 1.2rem !important;
+
+
 				
 				&:hover {
+					color: $green!important;
 					font-weight: bold;
 					//font-family: $verbBold;
 					//text-shadow: 0 0 .01px #FFF, 0 0 .01px #FFF, 0 0 .01px #FFF;
@@ -248,7 +269,7 @@ header {
 		
 		@media#{$mobile}, screen and (max-width: 1024px) and (min-width: 768px) {
 			&.navbar-dark {
-				background: transparent;
+				// background: transparent;
 				&.bgfilled, &.mbscrollbg {
 					background: $dark-blue;
 				}
@@ -403,6 +424,17 @@ footer {
 	}
 	
 	.footer-menu {
+
+		#navbarNav3 {
+			ul {
+				li {
+					a {
+						font-weight: normal;
+					}
+				}
+			}
+		}
+
 		ul{
 			padding-left: 0;
 			list-style-type: none;
@@ -413,6 +445,9 @@ footer {
 					&:hover {
 						color: $green;
 					}
+
+
+
 					@media #{$mobile} {
 						padding-top: 0;
 						padding-bottom: 0;
@@ -427,6 +462,12 @@ footer {
 						&:hover {
 							color: $white;
 						}
+					}
+				}
+
+				&:first-of-type {
+					a {
+						font-weight: bolder;
 					}
 				}
 			}
@@ -513,6 +554,13 @@ footer {
 
 .copyright {
 	font-size: 0.8rem;
+
+	@media($mobile) {
+		align-items: center;
+	    display: flex;
+	    flex-direction: column;
+	}
+
 	ul {
 		margin-bottom: 0 !important;
 	}
