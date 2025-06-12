@@ -301,6 +301,15 @@ function special_nav_class($classes, $item)
 }
 add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
 
+function add_expert_body_class($classes) {
+    if (is_page_template('templates/expert-page.php')) {
+        $classes[] = 'expert-page-wrapper';
+    }
+    return $classes;
+}
+add_filter('body_class', 'add_expert_body_class');
+
+
 function get_expert($id)
 {
     $post = get_post($id);

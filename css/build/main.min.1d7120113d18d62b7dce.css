@@ -139,6 +139,19 @@ ul li {
   max-width: 1340px;
 }
 
+header {
+  height: 68px;
+}
+@media ((max-width: 990px)) {
+  header {
+    height: 42px;
+  }
+}
+@media (max-width: 782px) {
+  header {
+    height: 28px;
+  }
+}
 header .navbar {
   background-color: #000116;
   transition: all 0.3s;
@@ -162,6 +175,9 @@ header .navbar a.nav-link {
 header .navbar a.nav-link:hover {
   color: #AFCA0B !important;
   font-weight: bold;
+}
+header .navbar li.menu-item.active a {
+  color: #AFCA0B !important;
 }
 header .navbar .sub-menu a.nav-link {
   color: #434343 !important;
@@ -434,6 +450,147 @@ footer .socials li a img {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+}
+
+body.expert-page-wrapper *:not(i) {
+  font-family: "IBM Plex Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body.expert-page-wrapper .page-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+body.expert-page-wrapper form.expert-filter-form input, body.expert-page-wrapper form.expert-filter-form select {
+  padding: 8px 12px;
+  width: 100%;
+}
+body.expert-page-wrapper form.expert-filter-form button {
+  background-color: #AFCA0B;
+  border: none;
+  color: #fff;
+  padding: 8px 26px;
+}
+body.expert-page-wrapper .expert-list {
+  padding-bottom: 80px;
+}
+body.expert-page-wrapper .expert-list .single-expert {
+  padding-top: 80px;
+  text-align: center;
+}
+body.expert-page-wrapper .expert-list .single-expert img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  width: auto;
+}
+@media ((max-width: 667px)) {
+  body.expert-page-wrapper .expert-list .single-expert img {
+    height: auto;
+    width: 100%;
+  }
+}
+body.expert-page-wrapper .expert-list .single-expert .expert-name {
+  font-size: 17px;
+  font-weight: bolder;
+  margin: 0;
+}
+body.expert-page-wrapper .expert-list .single-expert .expert-name a {
+  color: #000116;
+}
+body.expert-page-wrapper .expert-list .single-expert .expert-position {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 4px;
+}
+body.expert-page-wrapper .expert-list .single-expert .expert-location {
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 6px;
+  margin: 0;
+}
+body.expert-page-wrapper .expert-list .single-expert .soc-med-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 8px;
+}
+body.expert-page-wrapper .expert-list .single-expert .soc-med-wrapper a:hover i {
+  color: #AFCA0B;
+}
+body.expert-page-wrapper .expert-list .single-expert .soc-med-wrapper a i {
+  color: #000116;
+}
+
+@media (max-width: 1180px) {
+  .bg-dark-blue {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.single-expert-wrapper {
+  padding-top: 32px;
+}
+.single-expert-wrapper .back a {
+  font-family: "IBM Plex Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.single-expert-wrapper .back a:hover {
+  color: #000116 !important;
+}
+.single-expert-wrapper .details-single .single-expert-profile {
+  padding-top: 0;
+}
+.single-expert-wrapper .details-single .single-expert-profile *:not(i) {
+  color: #000116;
+  font-family: "IBM Plex Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.single-expert-wrapper .details-single .single-expert-profile .img-profile {
+  border-radius: 50%;
+  width: auto;
+}
+.single-expert-wrapper .details-single .single-expert-profile .expert-name {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media ((max-width: 667px)) {
+  .single-expert-wrapper .details-single .single-expert-profile .expert-name {
+    font-size: 30px;
+  }
+}
+.single-expert-wrapper .details-single .single-expert-profile .expert-position {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media ((max-width: 667px)) {
+  .single-expert-wrapper .details-single .single-expert-profile .expert-position {
+    font-size: 16px;
+  }
+}
+.single-expert-wrapper .details-single .single-expert-profile .expert-location {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.single-expert-wrapper .details-single .single-expert-profile .soc-med-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-top: 8px;
+}
+.single-expert-wrapper .details-single .single-expert-profile .soc-med-wrapper a:hover i {
+  color: #AFCA0B;
+}
+.single-expert-wrapper .details-single .single-expert-profile .soc-med-wrapper a i {
+  color: #000116;
+}
+.single-expert-wrapper .details-single .single-expert-profile h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .copyright {

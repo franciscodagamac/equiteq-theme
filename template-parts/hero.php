@@ -1,6 +1,6 @@
 <?php
 $page = $template_args['page'];
-//echo '<pre>'.print_r($page, true).'</pre>';
+echo '<pre>'.print_r($page, true).'</pre>';
 ?>
 <div class="hero-inner" style="background-position: 50% 50%; background-image: url('<?=wp_get_attachment_image_src($page->banner_image, 'full')[0] ?>');">
     <div class="gradient-layer"></div>
